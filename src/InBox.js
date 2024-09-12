@@ -20,6 +20,7 @@ import two from './images/two.png';
 import three from './images/three.png';
 import four from './images/four.png';
 import "./InBox.css";
+
 export default function InBox({ info }) {
   const tempPercentage = (info.temp / 50) * 100;
   const cloudPercentage = info.cloud; // Assuming this is out of 100

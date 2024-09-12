@@ -2,14 +2,22 @@ import InBox from './InBox';
 import SearchBox from './SearchBox';
 import { useState } from 'react';
 export default function WeatherApp(){
-    const [weatherInfo,setWeatherInfo]=useState({city:"Mumbai",
+    const currentDate = new Date();
+    
+    const [weatherInfo,setWeatherInfo]=useState({
+        day:0,
+        date:"2024-12-20",
+        time:"10:30",
+        city:"Mumbai",
         country:"India",
-        temp:30,
-        feelslike:32,
-        humidity:20,
-        weather:"Sunny",
+        temp:29.3,
+        feelslike:31.2,
+        humidity:55,
+        weather:"clear",
         windSpeed:10,
-        cloud:2,});
+        cloud:30,
+        
+    });
     let updateInfo=(newInfo)=>{
         setWeatherInfo(newInfo);
     }    

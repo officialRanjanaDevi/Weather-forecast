@@ -27,18 +27,18 @@ export default function SearchBox({ updateInfo }) {
       }
 
 
-      const {
-        current: {
-          is_day,
-          temp_c,
-          feelslike_c,
-          humidity,
-          condition: { text: weather },
-          wind_kph,
-          cloud,
-        },
-        location: { localtime, country },
-      } = jsonRes;
+    //   const {
+    //     current: {
+    //       is_day,
+    //       temp_c,
+    //       feelslike_c,
+    //       humidity,
+    //       condition: { text: weather },
+    //       wind_kph,
+    //       cloud,
+    //     },
+    //     location: { localtime, country },
+    //   } = jsonRes;
 
       const result = {
         day:jsonRes.current.is_day,
