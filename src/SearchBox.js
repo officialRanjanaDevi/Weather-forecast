@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import SearchIcon from '@mui/icons-material/Search';
 import './SearchBox.css';
- 
 export default function SearchBox({updateInfo}){
     let [city,SetCity]=useState("");
     let [error,setError]=useState(false);
     const API_URL="http://api.weatherapi.com/v1/current.json";
     const API_Key=process.env.REACT_APP_API_KEY;
+    console.log(API_Key);
     let getWheatherInfo=async()=>{
         try {
             const res = await fetch(`${API_URL}?key=${API_Key}&q=${city}&api=no`);
