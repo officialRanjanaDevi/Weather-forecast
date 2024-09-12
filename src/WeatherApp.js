@@ -13,7 +13,7 @@ export default function WeatherApp(){
     let updateInfo=(newInfo)=>{
         setWeatherInfo(newInfo);
     }    
-    return <div className='relative bg-slate-50 shadow-inner shadow-black py-4 h-full '>
+    return <div className='h-full relative bg-slate-50 shadow-inner shadow-black py-4 h-full '>
         <SearchBox updateInfo={updateInfo}/><br />
       <InBox info={weatherInfo}/>
     </div>
