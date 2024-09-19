@@ -28,16 +28,16 @@ This project uses the **OpenWeatherMap API** to fetch live weather data. You nee
 
 ## Installation and Setup
 
-1. Clone the repository:   git clone https://github.com/yourusername/weather-forecast-site.git
+1. Clone the repository:   git clone https://github.com/officialRanjanaDevi/Weather-forecast.git
    
 
-2. Navigate to the project folder:   cd weather-forecast-site
+2. Navigate to the project folder:   cd Weather-forecast
    
 
 3. Install the dependencies:   npm install
    
 
-4. Create a `.env` file in the root of your project and define your API key:   REACT_APP_WEATHER_API_KEY=your-api-key
+4. Create a `.env` file in the root of your project and define your API key:   REACT_APP_API_KEY=your-api-key
    
 
 5. Start the development server:   npm run start
